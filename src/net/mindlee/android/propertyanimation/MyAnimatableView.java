@@ -4,6 +4,7 @@ import android.graphics.PointF;
 import android.view.View;
 
 public class MyAnimatableView {
+	//coustm own property and must have getXXX or setXXX method
 	PointF curPoint = null;
 	View m_v = null;
 
