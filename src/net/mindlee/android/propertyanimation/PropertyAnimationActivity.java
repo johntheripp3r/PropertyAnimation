@@ -65,7 +65,8 @@ public class PropertyAnimationActivity extends Activity {
 		ObjectAnimator translationUp = ObjectAnimator.ofFloat(m_tv, "Y", 0);
 
 		AnimatorSet as = new AnimatorSet();
-		as.play(translationRight).before(translationLeft);
+		//as.play(translationRight).before(translationLeft);
+		as.play(translationLeft).before(translationRight);
 		as.play(translationRight).with(translationDown);
 		as.play(translationLeft).with(translationUp);
 
@@ -149,7 +150,6 @@ public class PropertyAnimationActivity extends Activity {
 		tea.setDuration(2000);
 		tea.setInterpolator(new OvershootInterpolator());
 		tea.start();
-
 	}
 
 	/*
